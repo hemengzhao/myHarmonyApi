@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER.UNSIGNED
       },
-      imgurl: {
+      image_src: {
         type: Sequelize.STRING
       },
       goods_id: {

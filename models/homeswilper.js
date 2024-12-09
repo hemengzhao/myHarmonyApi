@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   HomeSwilper.init({
-    imgurl: DataTypes.STRING,
+    image_src: DataTypes.STRING,
     goods_id: DataTypes.INTEGER,
     navigator_url: DataTypes.STRING,
     open_type: DataTypes.STRING
