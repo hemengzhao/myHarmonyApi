@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "admin123",
+    "password": "abc.123",
     "database": "my_harmony_api_dev",
-    "host": "127.0.0.1",
+    "host": "10.21.90.44",
     "dialect": "mysql",
     "timezone": "+08:00"
   },

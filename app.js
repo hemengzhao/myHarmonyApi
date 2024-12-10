@@ -6,6 +6,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var adminArticlesRouter = require('./routes/admin/articles');
 var harmonyHomeRouter = require('./routes/harmony/home');
+var harmonyActivityTypeRouter = require('./routes/harmony/activityType');
+
 var app = express();
 
 app.use(logger('dev'));
@@ -18,4 +20,5 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/article', adminArticlesRouter);
 app.use('/harmony/home', harmonyHomeRouter);
+app.use('/harmony/activityType', harmonyActivityTypeRouter);
 module.exports = app;
