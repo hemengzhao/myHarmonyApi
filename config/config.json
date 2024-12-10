@@ -1,17 +1,17 @@
 {
   "development": {
     "username": "root",
-    "password": "abc.123",
-    "database": "my_harmony_api_dev",
-    "host": "10.21.90.44",
+    "password": "admin123",  
+    "host": "192.168.31.244",
+    "database": "my_harmony_api_dev",  
     "dialect": "mysql",
     "timezone": "+08:00"
   },
   "test": {
     "username": "root",
-    "password": null,
+    "password": "admin123",
     "database": "my_harmony_api_dev",
-    "host": "127.0.0.1",
+    "host": "192.168.31.244",
     "dialect": "mysql",
     "timezone": "+08:00"
   },
