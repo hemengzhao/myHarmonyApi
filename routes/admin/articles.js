@@ -51,6 +51,7 @@ router.get("/:id", async function (req, res, next) {
 router.post("/", async function (req, res, next) {
   try {
     const { title, content } = req.body;
+    console.log('=======>', req.body)
     const condition = {
       title,
       content,

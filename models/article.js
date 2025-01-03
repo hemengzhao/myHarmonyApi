@@ -1,4 +1,6 @@
 'use strict';
+
+const bcrypt = require('bcryptjs')
 const {
   Model
 } = require('sequelize');
@@ -24,10 +26,13 @@ module.exports = (sequelize, DataTypes) => {
         notEmpty: {
           msg: '标题不能为空'
         },
-        len: {
-          args: [2,30],
-          msg: '标题长度为2 ～ 30个字符之间'
-        }
+        // len: {
+        //   args: [2,30],
+        //   msg: '标题长度为2 ～ 30个字符之间'
+        // }
+      },
+      set(value){
+        this.setDataValue('title', bcrypt.hashSync(value))
       }
     },
     content: DataTypes.TEXT
